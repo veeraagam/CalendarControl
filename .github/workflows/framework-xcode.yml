@@ -42,12 +42,9 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --local user.email "sudhanshuk1219@gmail.com"
-          git config --local user.name "sudhanshublah"
           git commit -a -m "Add changes"
       - name: Push changes
         run: |
-          cd $GITHUB_WORKSPACE
           git config --local user.email "sudhanshuk1219@gmail.com"
           git config --local user.name "sudhanshublah"
           git push --repo https://sudhanshublah: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@github.com/veeraagam/CalendarControl.git
