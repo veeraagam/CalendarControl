@@ -22,6 +22,5 @@ jobs:
 #             -output './build/CalendarControl.xcframework'
       - name: Build iOS Framework
         run: |
-          rm -rf ./ios-arm64*/CalendarControl.framework
-          ls ./ios-arm64
+          find . -name CalendarControl.framework
           
