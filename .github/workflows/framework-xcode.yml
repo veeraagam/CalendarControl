@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Adjust the branch name as per your needs
 
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: macos-latest
