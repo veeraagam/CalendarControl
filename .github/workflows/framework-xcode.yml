@@ -39,7 +39,16 @@ jobs:
             -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
             -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
             -output './build/CalendarControl.xcframework'
-      - name: Commit & Push changes
-        uses: actions-js/push@master
+      - name: Setting up Git
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
           github_token: "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"
+          branch: ${{ github.ref }}
+      - uses: fastify/github-action-merge-dependabot@v2.1.1
+        with:
+          github-token: "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"
