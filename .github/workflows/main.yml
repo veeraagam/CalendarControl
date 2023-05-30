@@ -1,7 +1,7 @@
 on:
   workflow_run:
     workflows:
-      - 'framework-xcode.yml'
+      - 'Build iOS Framework'
     types:
       - completed
 
