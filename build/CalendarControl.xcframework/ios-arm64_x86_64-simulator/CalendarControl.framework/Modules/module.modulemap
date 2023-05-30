@@ -6,6 +6,6 @@ framework module CalendarControl {
 }
 
 module CalendarControl.Swift {
-    header "CalendarControl-Swift.h"
-    requires objc
+  header "CalendarControl-Swift.h"
+  requires objc
 }

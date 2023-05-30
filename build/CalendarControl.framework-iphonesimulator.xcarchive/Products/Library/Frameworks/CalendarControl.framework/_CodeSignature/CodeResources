@@ -6,67 +6,59 @@
 	<dict>
 		<key>Headers/CalendarControl-Swift.h</key>
 		<data>
-		fQwjBvSKRLPhGUiBU8tQhRVSKGg=
+		oN3DgB0Xz0l2b+lcer/gJ7R8xEk=
 		</data>
 		<key>Headers/CalendarControl.h</key>
 		<data>
-		hhu3cbmMiUtOlqMToGDIvLDj6oQ=
+		5GsF80hvYjuwrfDJVPP0E8jlysA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XCC6lKZRrpBZqOsyJvsLCxR/JjA=
+		p37Nt5hobX4YfFt96KSNBwAUrk0=
+		</data>
+		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		q1qgxhZ82h6/s2E08Cerd2xando=
+		</data>
+		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		6akUu0M7930vZcYrnPTz9EaHqqs=
 		</data>
 		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		P0oRVtyE+Dcp9/4og4VqjnUasiM=
+		x1SPtsgkiuPk9K3iDTIi+n0VllU=
 		</data>
 		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		laEdFH30kROEl0KG/4BG/32jsMg=
+		6akUu0M7930vZcYrnPTz9EaHqqs=
 		</data>
 		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OBxAshh41x93TphV33H7w6A6Bio=
+		lamC5KPvtrPLPBdF/RFy5U1tFoQ=
 		</data>
-		<key>Modules/CalendarControl.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		P0oRVtyE+Dcp9/4og4VqjnUasiM=
+		q1qgxhZ82h6/s2E08Cerd2xando=
 		</data>
-		<key>Modules/CalendarControl.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		laEdFH30kROEl0KG/4BG/32jsMg=
-		</data>
-		<key>Modules/CalendarControl.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		OBxAshh41x93TphV33H7w6A6Bio=
+		uE5R29/6X2fcwXH4XFT2IHpEKYc=
 		</data>
 		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		a1ZdiFN64R+IqOOuDsjJNiw8ukY=
+		0zQs9WbxZElEzhPVqVwITaJuf08=
 		</data>
 		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NMW9YVYwndU4inqSdia//azv/7c=
+		uE5R29/6X2fcwXH4XFT2IHpEKYc=
 		</data>
 		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mCOxnDCjckmufqi8JvN8iw5+890=
-		</data>
-		<key>Modules/CalendarControl.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		a1ZdiFN64R+IqOOuDsjJNiw8ukY=
-		</data>
-		<key>Modules/CalendarControl.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		NMW9YVYwndU4inqSdia//azv/7c=
-		</data>
-		<key>Modules/CalendarControl.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		mCOxnDCjckmufqi8JvN8iw5+890=
+		l3aW8BuFZxTVyUDDiuid26g5SEo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		e67aJLpBzu56LAhe3rpNXjcl/ag=
+		W94ZcWjx7io98PyJgzZtVgbxtRg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,105 +67,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5v8/xDR3h/534mes0l7jOKB81VvpEjiPGHJD9kPpZDE=
+			lc7sJpEyIjSJenX5HQzQWn+9E9wajnLKpe5Gk7VTO7w=
 			</data>
 		</dict>
 		<key>Headers/CalendarControl.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q7juE/RanbC9bR9G7CsF4ruVkwXn7Ty5yN1iBxcKfW0=
+			+BMhEL0b7/uFhVPFMRg408fNE7SM4NR7bNj9p1GWarg=
+			</data>
+		</dict>
+		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WNsynvtH5+wsIgs1tuTVOLpXWd4ij6Uym9CzkUHY8HI=
+			</data>
+		</dict>
+		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X4QA+f0DMM6JIIcKdFaRi70kVeuzyoKD8HHM4p9/I0M=
 			</data>
 		</dict>
 		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f+xcPYbZvWMrNWZpCf6/O4FIKj9/jHWrNAd09qarCwI=
+			FoP1noV2eO56hjuxOS32ksJO73VhfQ5sep+3rOZMfJs=
 			</data>
 		</dict>
 		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yvOxefJ/zH/eLcDAbLq3vFnqCx46jzDiUlLoDsECWlM=
+			X4QA+f0DMM6JIIcKdFaRi70kVeuzyoKD8HHM4p9/I0M=
 			</data>
 		</dict>
 		<key>Modules/CalendarControl.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QS2tqkABXJQbxUm7kewCu8Wv9yr1hRuAuLreM7dIGyo=
+			0bWqEIi8NSBYFdEaukw957N/iv0eS1oet1IryLslDyw=
 			</data>
 		</dict>
-		<key>Modules/CalendarControl.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f+xcPYbZvWMrNWZpCf6/O4FIKj9/jHWrNAd09qarCwI=
+			WNsynvtH5+wsIgs1tuTVOLpXWd4ij6Uym9CzkUHY8HI=
 			</data>
 		</dict>
-		<key>Modules/CalendarControl.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yvOxefJ/zH/eLcDAbLq3vFnqCx46jzDiUlLoDsECWlM=
-			</data>
-		</dict>
-		<key>Modules/CalendarControl.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QS2tqkABXJQbxUm7kewCu8Wv9yr1hRuAuLreM7dIGyo=
+			x61CpYFJ0f8Iblz+phnxHun/weScFyh69tSC/MOYe4E=
 			</data>
 		</dict>
 		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9OZ2TD2Nu71rpfbdDuoMXeB1sSUKXwu3K73UAgcELI=
+			xHk5Pei1x8n4JylLwk9yvxWpbL3Xc+k8vOHdKza8IiY=
 			</data>
 		</dict>
 		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KKaxwuZHhJJxCpCBSnfLys/gYfMOqCjzI5w5fvcHl3A=
+			x61CpYFJ0f8Iblz+phnxHun/weScFyh69tSC/MOYe4E=
 			</data>
 		</dict>
 		<key>Modules/CalendarControl.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Al6/A2KtNymTxGKjiWHWJbRxPOtDGrYS+HCs1gkcvCU=
-			</data>
-		</dict>
-		<key>Modules/CalendarControl.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			v9OZ2TD2Nu71rpfbdDuoMXeB1sSUKXwu3K73UAgcELI=
-			</data>
-		</dict>
-		<key>Modules/CalendarControl.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KKaxwuZHhJJxCpCBSnfLys/gYfMOqCjzI5w5fvcHl3A=
-			</data>
-		</dict>
-		<key>Modules/CalendarControl.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Al6/A2KtNymTxGKjiWHWJbRxPOtDGrYS+HCs1gkcvCU=
+			Mpy7srJFbi64OnMxK3ChzJStJfluMUhN8Ji/YiAUi/I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nfhJQRrhbym5n2IWCJRa9YJZmafmWJuPPFELsW7/THk=
+			ZZAxAFDYfxhE4bYp5c5vAq9nQdcoihpGIT8fTyiPXGo=
 			</data>
 		</dict>
 	</dict>
