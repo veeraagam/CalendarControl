@@ -1,0 +1,32 @@
+name: Build iOS Framework
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as per your needs
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Xcode
+        uses: actions/setup-xcode@v2
+        with:
+          xcode-version: 12.0
+      - name: Build iOS Framework
+        run: |
+          xcodebuild -create-xcframework \
+            -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
+            -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
+            -framework './build/CalendarControl.framework-catalyst.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
+            -output './build/CalendarControl.xcframework'
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add build/
+          git commit -m "Add iOS Framework build"
+          git push
