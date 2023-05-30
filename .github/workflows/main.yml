@@ -21,7 +21,7 @@ jobs:
           git clone https://github.com/sudhanshublah/improved-train.git
 
           # Copy the framework folder
-          cp -r build/CalendarControl.xcframework improved-train/Sources/CalendarControl.xcframework
+          mkdir -P improved-train/Sources && cp -r build/CalendarControl.xcframework improved-train/Sources/CalendarControl.xcframework
 
     
     
