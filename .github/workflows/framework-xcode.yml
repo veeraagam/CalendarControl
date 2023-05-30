@@ -14,6 +14,7 @@ jobs:
 
       - name: Build iphoneos
         run: |
+          rm -rf build
           xcodebuild archive \
             -scheme CalendarControl \
             -configuration Release \
