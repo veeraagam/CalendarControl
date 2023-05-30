@@ -18,7 +18,7 @@ jobs:
 
       - name: Copy Folder to Destination Repository
         run: |
-          git remote add destination origin https://github.com/sudhanshublah/improved-train.git
+          git clone https://github.com/sudhanshublah/improved-train.git
 
           # Copy the framework folder
           cp -r build/CalendarControl.xcframework improved-train/Sources/CalendarControl.xcframework
