@@ -19,7 +19,10 @@ jobs:
       - name: Copy Folder to Destination Repository
         run: |
           git clone https://github.com/sudhanshublah/improved-train.git
-
+          
+          git config --global user.email "sudhanshuk1219@gmail.com"
+          git config --global user.name "sudhanshublah"
+          
           mkdir -p improved-train/Sources && cp -r build/CalendarControl.xcframework improved-train/Sources/CalendarControl.xcframework
           cd improved-train && git add . && git commit -m "updated framework" && git push origin main
 
