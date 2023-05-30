@@ -41,8 +41,8 @@ jobs:
             -output './build/CalendarControl.xcframework'
       - name: Setting up Git
         run: |
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
+          git config user.name sudhanshublah  
+          git config user.email sudhanshuk1219@gmail.com
           
       - name: Push changes
         uses: ad-m/github-push-action@master
