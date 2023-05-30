@@ -12,25 +12,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-#       - name: Set up Xcode
-#         uses: actions/setup-xcode@v2
-#         with:
-#           xcode-version: 12.0
-#           xcodebuild -create-xcframework \
-#             -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
-#             -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
-#             -output './build/CalendarControl.xcframework'
+      - name: Build iphoneos
+        run: |
+          xcodebuild archive \
+            -scheme CalendarControl \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath './build/CalendarControl.framework-iphoneos.xcarchive' \
+            SKIP_INSTALL=NO \
+            BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+            
+      - name: Build iphonesimulator
+        run: |
+          xcodebuild archive \
+            -scheme CalendarControl \
+            -configuration Release \
+            -destination 'generic/platform=iOS Simulator' \
+            -archivePath './build/CalendarControl.framework-iphonesimulator.xcarchive' \
+            SKIP_INSTALL=NO \
+            BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+
       - name: Build iOS Framework
         run: |
-          rm -rf ./build/CalendarControl.xcframework/*
           xcodebuild -create-xcframework \
             -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
             -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
             -output './build/CalendarControl.xcframework'
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add build/
-          git commit -m "Add iOS Framework build"
-          git push
+#       - name: Commit and Push Changes
+#         run: |
+#           git config --global user.name "GitHub Actions"
+#           git config --global user.email "actions@github.com"
+#           git add build/
+#           git commit -m "Add iOS Framework build"
+#           git push
