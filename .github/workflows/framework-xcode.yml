@@ -22,5 +22,8 @@ jobs:
 #             -output './build/CalendarControl.xcframework'
       - name: Build iOS Framework
         run: |
-          find . -name CalendarControl.framework
-          
+          rm -rf ./build/CalendarControl.xcframework/*
+          xcodebuild -create-xcframework \
+            -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
+            -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
+            -output './build/CalendarControl.xcframework'
