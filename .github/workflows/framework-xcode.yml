@@ -40,7 +40,16 @@ jobs:
             -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
             -output './build/CalendarControl.xcframework'
 
-
+      - name: Commit files
+        run: |
+          git config --local user.email "sudhanshuk1219@gmail.com"
+          git config --local user.name "sudhanshublah"
+          git commit -a -m "Add changes"
+#       - name: Push changes
+#         uses: ad-m/github-push-action@master
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           branch: ${{ github.ref }}
       - name: simple-github-auto-push
       # You may pin to the exact commit or the version.
       # uses: hisasann/simple-github-auto-push@9b1d9d0ed24c9eb7f9f27c7b0765775804b417a3
