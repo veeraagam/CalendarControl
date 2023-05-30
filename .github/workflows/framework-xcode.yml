@@ -16,12 +16,12 @@ jobs:
 #         uses: actions/setup-xcode@v2
 #         with:
 #           xcode-version: 12.0
+#           xcodebuild -create-xcframework \
+#             -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
+#             -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
+#             -output './build/CalendarControl.xcframework'
       - name: Build iOS Framework
         run: |
           rm -rf ./ios-arm64*/CalendarControl.framework
-          xcodebuild -create-xcframework \
-            -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
-            -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
-            -output './build/CalendarControl.xcframework'
-          ls
+          ls ./ios-arm64
           
