@@ -47,8 +47,8 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: "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"
+          github_token: "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"
           branch: ${{ github.ref }}
       - uses: fastify/github-action-merge-dependabot@v2.1.1
         with:
-          github-token: "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"
+          github-token: "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"
