@@ -1,0 +1,34 @@
+on:
+  workflow_run:
+    workflows:
+      - 'framework-xcode.yml'
+    types:
+      - completed
+
+jobs:
+  copy-folder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Repository
+        uses: actions/checkout@v2
+        with:
+          repository: owner/source-repo
+          ref: ${{ github.event.workflow_run.head_commit.id }}
+
+      - name: Copy Folder to Destination Repository
+        run: |
+          git remote add destination origin https://github.com/sudhanshublah/improved-train.git
+
+          # Copy the framework folder
+          cp -r build/CalendarControl.xcframework improved-train/Sources/CalendarControl.xcframework
+
+    
+    
+    
+    
+#         # Commit and push changes
+#           cd destination
+#           git add .
+#           git commit -m "Copy framework folder from source repository"
+#           git push origin main
