@@ -19,11 +19,8 @@ jobs:
       - name: Build iOS Framework
         run: |
           rm -rf CalendarControl.framewor*
-          xcodebuild -create-xcframework \
-            -framework './build/CalendarControl.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
-            -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
-            -framework './build/CalendarControl.framework-catalyst.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
-            -output './build/CalendarControl.xcframework'
+          ls
+          
       - name: Commit and Push Changes
         run: |
           git config --global user.name "GitHub Actions"
