@@ -56,7 +56,9 @@ jobs:
           git commit -a -m "Add changes"
           git push  origin main
           
-          
+  trigger:
+    runs-on: ubuntu-latest
+    steps:         
       - uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
           owner: sudhanshublah
