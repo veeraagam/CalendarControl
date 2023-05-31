@@ -18,8 +18,8 @@ jobs:
       
       - name: Pushes test file
         uses: dmnemec/copy_file_to_another_repo_action@main
-        env:
-          API_TOKEN_GITHUB: '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'
+#         env:
+#           API_TOKEN_GITHUB: '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'
         with:
           source_file: 'build/CalendarControl.xcframework/Info.plist'
           user_name: 'sudhanshublah'
