@@ -18,8 +18,8 @@ jobs:
 
       - name: Copy to different repo
         uses: nkoppel/push-files-to-another-repository@1.1.1
-#         env:
-#           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        env:
+          API_TOKEN_GITHUB: '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'
         with:
           source-files: 'build/CalendarControl.xcframework'
 #           destination-username: 'sudhanshublah'
