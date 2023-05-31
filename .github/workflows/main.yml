@@ -21,10 +21,10 @@ jobs:
         env:
           API_TOKEN_GITHUB: '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'
         with:
-          source-file: 'build/CalendarControl.xcframework/Info.plist'
+          source_file: 'build/CalendarControl.xcframework/Info.plist'
           user_name: 'sudhanshublah'
-          destination-repo: 'sudhanshublah/improved-train'
-          destination-folder: 'Sources/'
+          destination_repo: 'sudhanshublah/improved-train'
+          destination_folder: 'Sources/'
           user_email: 'sudhanshuk1219@gmail.com'
           commit_message: 'A custom message for the commit'
     
