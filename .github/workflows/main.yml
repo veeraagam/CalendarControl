@@ -15,17 +15,17 @@ jobs:
         with:
           repository: veeraagam/CalendarControl
           ref: ${{ github.event.workflow_run.head_commit.id }}
-
-      - name: Copy to different repo
-        uses: nkoppel/push-files-to-another-repository@1.1.1
+      
+      - name: Pushes test file
+        uses: dmnemec/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: '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'
         with:
           source-files: 'build/CalendarControl.xcframework'
-#           destination-username: 'sudhanshublah'
-          destination-repository: 'sudhanshublah/improved-train'
-          destination-directory: 'Sources/'
-#           commit-email: 'nathankoppel0@gmail.com'
+          user_name: 'sudhanshublah'
+          destination-repo: 'sudhanshublah/improved-train'
+          destination-folder: 'Sources/'
+          user_email: 'sudhanshuk1219@gmail.com'
     
     
     
