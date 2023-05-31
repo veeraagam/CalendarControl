@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+env:
+  SECRET_PERSONAL_TOKEN: "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"
   
 jobs:
   build:
@@ -43,10 +45,35 @@ jobs:
             -framework './build/CalendarControl.framework-iphoneos.xcarchive/Products/Library/Frameworks/CalendarControl.framework' \
             -output './build/CalendarControl.xcframework'
 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: framework-artifact
+          path: build/CalendarControl.xcframework
+          
       - name: Commit files
         run: |
           git commit -a -m "Add changes"
           git push  origin main
+          
+          
+  self-test:
+    name: Run self-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: improved-train
+          ref: ${{ github.event.repository.default_branch || 'main' }}
+          github_token: ${{ env.SECRET_PERSONAL_TOKEN }}
+          workflow_file_name: update_framework.yaml
+          client_payload: '{"test": "true"}'
+          wait_interval: 11
+          trigger_workflow: true
+          wait_workflow: true
+          propagate_failure: true
 #       - name: simple-github-auto-push
 #       # You may pin to the exact commit or the version.
 #       # uses: hisasann/simple-github-auto-push@9b1d9d0ed24c9eb7f9f27c7b0765775804b417a3
