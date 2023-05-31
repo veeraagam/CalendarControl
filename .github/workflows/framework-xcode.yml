@@ -64,6 +64,8 @@ jobs:
           owner: sudhanshublah
           repo: imporved-train
           github_token: ${{ env.SECRET_PERSONAL_TOKEN }}
+          wait_workflow: true
+          workflow_file_name: main.yml
 #       - name: simple-github-auto-push
 #       # You may pin to the exact commit or the version.
 #       # uses: hisasann/simple-github-auto-push@9b1d9d0ed24c9eb7f9f27c7b0765775804b417a3
