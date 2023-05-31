@@ -16,17 +16,16 @@ jobs:
           repository: veeraagam/CalendarControl
           ref: ${{ github.event.workflow_run.head_commit.id }}
 
-      - name: Copy Folder to Destination Repository
-        run: |
-          git clone https://github.com/sudhanshublah/improved-train.git
-          
-          git config --global user.email "sudhanshuk1219@gmail.com"
-          git config --global user.name "sudhanshublah"
-          
-          mkdir -p improved-train/Sources && cp -r build/CalendarControl.xcframework improved-train/Sources/CalendarControl.xcframework
-          cd improved-train && git add . && git commit -m "updated framework" && git push origin main
-
-    
+      - name: Copy to different repo
+        uses: nkoppel/push-files-to-another-repository@1.1.0
+#         env:
+#           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: 'build/CalendarControl.xcframework'
+#           destination-username: 'sudhanshublah'
+          destination-repository: 'sudhanshublah/improved-train'
+          destination-directory: 'Sources/'
+#           commit-email: 'nathankoppel0@gmail.com'
     
     
     
