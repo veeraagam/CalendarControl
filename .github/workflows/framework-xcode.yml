@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
+      - uses: ./.github/workflow/
         with:
           owner: ${{ github.repository_owner }}
           repo: improved-train
