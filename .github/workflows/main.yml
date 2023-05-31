@@ -21,14 +21,14 @@ jobs:
       
       - name: Pushes test file
         uses: dmnemec/copy_file_to_another_repo_action@main
-#         env:
-#           API_TOKEN_GITHUB: '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'
+        env:
+          API_TOKEN_GITHUB: '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'
         with:
           source_file: 'build/CalendarControl.xcframework/Info.plist'
-          user_name: 'github-actions[bot]'
+          user_name: 'sudhanshublah'
           destination_repo: 'sudhanshublah/improved-train'
           destination_folder: 'Sources/'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_email: 'sudhanshuk1219@gmail.com'
           commit_message: 'A custom message for the commit'
     
     
