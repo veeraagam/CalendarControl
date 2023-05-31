@@ -5,6 +5,9 @@ on:
     types:
       - completed
 
+permissions:
+  contents: write
+  
 jobs:
   copy-folder:
     runs-on: ubuntu-latest
